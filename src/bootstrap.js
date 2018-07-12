@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
-import Home from './components/Home';
+import Home from './components/home';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
@@ -16,7 +16,7 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Home />
     </Provider>
-    , document.querySelector('.app-wrapper'));
+    , document.querySelector('.home'));
 }
 
 document.addEventListener('DOMContentLoaded', main);

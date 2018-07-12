@@ -1,6 +1,9 @@
+@import 'variables';
+
+
 .home {
     display: grid;
-    grid-template-columns: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
+    grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: 100vh;
     width: 100vw;
@@ -8,9 +11,21 @@
 
 
 .library {
-    grid-column: library-s/library-e;
+    grid-column: 1/2;
 }
 
 .schedule {
-    grid-column: schedule-s/schedule-e;
+    grid-column: 3;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, $color-purple 0%, $color-light-blue 100%);
+    z-index: -10;
 }
