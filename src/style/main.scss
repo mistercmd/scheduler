@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'library';
+@import 'libraryCourse';
 
 
 .home {
@@ -10,9 +12,6 @@
 }
 
 
-.library {
-    grid-column: 1/2;
-}
 
 .schedule {
     grid-column: 3;
